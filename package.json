@@ -1,0 +1,17 @@
+{
+  "name": "inversify-socket.io-utils",
+  "version": "1.0.0",
+  "description": "Some utilities for the development of socket.io applications with Inversify.",
+  "author": "Brian Choi",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^7.0.22",
+    "@types/socket.io": "^1.4.29",
+    "typescript": "^2.3.3"
+  },
+  "dependencies": {
+    "inversify": "^4.1.0",
+    "reflect-metadata": "^0.1.10",
+    "socket.io": "^2.0.1"
+  }
+}
