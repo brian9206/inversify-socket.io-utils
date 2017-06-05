@@ -10,9 +10,9 @@ var InversifySocketIOServer = (function () {
     }
     InversifySocketIOServer.prototype.bind = function (srv) {
         this.clientList = [];
-        var server = SocketIO.listen(srv);
-        server.on("connection", this.onConnectListener);
-        return server;
+        this.server = SocketIO.listen(srv);
+        this.server.on("connection", this.onConnectListener);
+        return this.server;
     };
     // Events
     InversifySocketIOServer.prototype.onConnect = function (socket) {

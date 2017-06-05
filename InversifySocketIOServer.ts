@@ -7,7 +7,8 @@ import * as SocketIO from 'socket.io';
 
 export class InversifySocketIOServer {
     private container: inversify.Container;
-    private clientList: InversifySocketIOClient[];
+    public clientList: InversifySocketIOClient[];
+    public server: SocketIO.Server;
 
     // Event listener
     private onConnectListener: Function;
@@ -18,12 +19,12 @@ export class InversifySocketIOServer {
     }
 
     public bind(srv: any): SocketIO.Server {
-         this.clientList = [];
-        let server: SocketIO.Server = SocketIO.listen(srv);
+        this.clientList = [];
+        this.server = SocketIO.listen(srv);
 
-        server.on("connection", this.onConnectListener);
+        this.server.on("connection", this.onConnectListener);
 
-        return server;
+        return this.server;
     }
 
     // Events
