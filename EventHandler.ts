@@ -3,7 +3,7 @@ import { TYPE } from './Constant';
 import * as SocketIO from 'socket.io';
 
 export interface IEventHandler {
-    fire(client: SocketIO.Client, data: any);
+    fire(client: SocketIO.Socket, data: any);
 }
 
 export function EventHandler(event: string) {
