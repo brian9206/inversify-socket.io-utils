@@ -1,6 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.TYPE = {
-    EventHandler: "EventHandler",
-    Client: "InversifySocketIOClientImpl"
+    EventHandler: "EventHandler"
 };

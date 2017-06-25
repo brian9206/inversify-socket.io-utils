@@ -6,5 +6,3 @@ var EventHandler_1 = require("./EventHandler");
 exports.EventHandler = EventHandler_1.EventHandler;
 var InversifySocketIOServer_1 = require("./InversifySocketIOServer");
 exports.InversifySocketIOServer = InversifySocketIOServer_1.InversifySocketIOServer;
-var InversifySocketIOClient_1 = require("./InversifySocketIOClient");
-exports.InversifySocketIOClient = InversifySocketIOClient_1.InversifySocketIOClient;

@@ -1,9 +1,9 @@
 import 'reflect-metadata';
-import { InversifySocketIOClient } from './InversifySocketIOClient';
 import { TYPE } from './Constant';
+import * as SocketIO from 'socket.io';
 
 export interface IEventHandler {
-    fire(client: InversifySocketIOClient, data: any);
+    fire(client: SocketIO.Client, data: any);
 }
 
 export function EventHandler(event: string) {

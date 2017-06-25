@@ -1,4 +1,3 @@
 export const TYPE = {
-    EventHandler: "EventHandler",
-    Client: "InversifySocketIOClientImpl"
+    EventHandler: "EventHandler"
 }
